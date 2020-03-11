@@ -20,6 +20,12 @@ module NavigationHelpers
     #
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
+    
+    when /^the edit page for "(.*)"$/
+      edit_path($1)
+    
+    when /^the details page for "(.*)"$/
+      details_path($1)
 
     else
       begin
@@ -31,6 +37,16 @@ module NavigationHelpers
           "Now, go and add a mapping in #{__FILE__}"
       end
     end
+  end
+  
+  def edit_path(movie_title)
+    movie = Movie.find_by(title: movie_title)
+    "/movies/" + movie.id.to_s + "/edit"
+  end
+  
+  def details_path(movie_title)
+    movie = Movie.find_by(title: movie_title)
+    movie_path(movie)
   end
 end
 

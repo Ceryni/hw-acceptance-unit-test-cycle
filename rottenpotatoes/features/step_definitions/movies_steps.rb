@@ -23,3 +23,14 @@ Then /I should see all the movies/ do
     step %{I should see "#{movie.title}"}
   end
 end
+
+Then /the director of "(.*)" should be "(.*)"/ do |expected_title, expected_director| 
+  movie = Movie.find_by(title: expected_title)
+  visit movie_path(movie)
+  expect(page.find_by_id("director").text).to match("Director: #{expected_director}")
+end
+
+Then /^I should be on the Similar Movies page for "(.*)"$/ do |title|
+  movie = Movie.find_by(title: title)
+  expect(current_path).to match(directors_movies_path(movie.director))
+end
