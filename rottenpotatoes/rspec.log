@@ -1,0 +1,20 @@
+.***
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) DirectorsHelper add some examples to (or delete) /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/spec/helpers/directors_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/directors_helper_spec.rb:14
+
+  2) directors/movies.html.erb add some examples to (or delete) /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/spec/views/directors/movies.html.erb_spec.rb
+     # Not yet implemented
+     # ./spec/views/directors/movies.html.erb_spec.rb:4
+
+  3) movies/index.html.erb add some examples to (or delete) /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/spec/views/movies/index.html.erb_spec.rb
+     # Not yet implemented
+     # ./spec/views/movies/index.html.erb_spec.rb:4
+
+Finished in 0.02453 seconds (files took 1.61 seconds to load)
+4 examples, 0 failures, 3 pending
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 46 / 54 LOC (85.19%) covered.
